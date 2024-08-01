@@ -133,6 +133,15 @@ body {
   position: absolute;
 }
 
+.has-after img {
+  width: 100%;
+}
+
+.img-bg {
+  background-image: url('./assets/images/hero-bg.png');
+  object-fit: cover;
+}
+
 .h1,
 .h2,
 .h3 {
@@ -187,8 +196,6 @@ body {
 .btn-secondary:is(:hover, :focus) { background-color: var(--rich-black-fogra-29-1); }
 
 .w-100 { 
-  margin-left: 10%;
-  width: 70%;
   margin-bottom: 20%;
 }
 
@@ -423,7 +430,11 @@ body {
 
 .hero .btn { margin-inline: auto; }
 
-.hero-banner { position: relative; }
+.hero-banner { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
 .abs-img-1 {
   top: 20px;
@@ -1205,4 +1216,20 @@ body {
   .member iframe {
     height: 400px;
   }
+}
+
+.mem ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.mem ::-webkit-scrollbar-track {
+  background-color: var(--light-gray);
+}
+
+.mem ::-webkit-scrollbar-thumb {
+  background-color: var(--coquelicot);
+}
+
+.mem ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--rich-black-fogra-29-1);
 }
