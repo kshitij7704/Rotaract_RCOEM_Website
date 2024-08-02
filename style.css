@@ -1347,3 +1347,11 @@ body {
       flex-direction: column;
   }
 }
+
+.mem-container .error {
+  width: 95.5%;
+}
+
+.mem-container .success {
+  width: 95.5%;
+}
