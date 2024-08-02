@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Membership Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .mem-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #da1c5b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container h2 {
+            text-align: center;
+            color: #0e0d69;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group textarea {
+            height: 50px;
+        }
+        .form-group .radio-group {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .form-group .radio-group label {
+            flex: 1;
+            text-align: left;
+        }
+        .form-group .radio-group input {
+            margin-right: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0e0d69;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0c0b5b;
+        }
+        .form-head {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="mem-container">
+        <form id="membershipForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdUpkS0LtT1lOwzx357kepYjcXg92PHdGbLEOeJsjESaaNZaQ/formResponse">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.1223500353" placeholder="Your Name">
+                <span id="nameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="year">Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="entry.1891674036" value="Male">Male</label>
+                    <label><input type="radio" name="entry.1891674036" value="Female">Female</label>
+                    <label><input type="radio" name="entry.1891674036" value="Prefer not to say">Prefer not to say</label>
+                </div>
+                <span id="genderError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="entry.805316665" placeholder="Your Mobile Number">
+                <span id="mobileError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" name="entry.2095270646">
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="entry.1071028549" placeholder="Your Branch">
+                <span id="branchError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <div><label for="year">Year:</label></div>
+                <div class="radio-group">
+                    <label><input type="radio" name="entry.32802590" value="1st">First Year</label>
+                    <label><input type="radio" name="entry.32802590" value="2nd">Second Year</label>
+                    <label><input type="radio" name="entry.32802590" value="3rd">Third Year</label>
+                </div>
+                <span id="yearError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="reason">Why do you want to join us?</label>
+                <textarea id="reason" name="entry.874227514"></textarea>
+                <span id="reasonError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="contribution">How can you be useful to us?</label>
+                <textarea id="contribution" name="entry.65414392"></textarea>
+                <span id="contributionError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="experience">Any past social service experience?</label>
+                <textarea id="experience" name="entry.1483839487"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <div id="formMsg"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('membershipForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Clear previous error messages
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('genderError').textContent = '';
+            document.getElementById('mobileError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('branchError').textContent = '';
+            document.getElementById('yearError').textContent = '';
+            document.getElementById('reasonError').textContent = '';
+            document.getElementById('contributionError').textContent = '';
+            document.getElementById('formMsg').textContent = '';
+
+            // Validate the form inputs
+            let isValid = true;
+            const name = document.getElementById('name').value;
+            const gender = document.querySelector('input[name="entry.1891674036"]:checked');
+            const mobile = document.getElementById('mobile').value;
+            const email = document.getElementById('email').value;
+            const branch = document.getElementById('branch').value;
+            const year = document.querySelector('input[name="entry.32802590"]:checked');
+            const reason = document.getElementById('reason').value;
+            const contribution = document.getElementById('contribution').value;
+
+            if (!name) {
+                isValid = false;
+                document.getElementById('nameError').textContent = 'Name is required';
+            }
+
+            if (!gender) {
+                isValid = false;
+                document.getElementById('genderError').textContent = 'Gender is required';
+            }
+
+            if (!mobile) {
+                isValid = false;
+                document.getElementById('mobileError').textContent = 'Mobile number is required';
+            }
+
+            if (!email) {
+                isValid = false;
+                document.getElementById('emailError').textContent = 'Email is required';
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                isValid = false;
+                document.getElementById('emailError').textContent = 'Email is invalid';
+            }
+
+            if (!branch) {
+                isValid = false;
+                document.getElementById('branchError').textContent = 'Branch is required';
+            }
+
+            if (!year) {
+                isValid = false;
+                document.getElementById('yearError').textContent = 'Year is required';
+            }
+
+            if (!reason) {
+                isValid = false;
+                document.getElementById('reasonError').textContent = 'Reason is required';
+            }
+
+            if (!contribution) {
+                isValid = false;
+                document.getElementById('contributionError').textContent = 'Contribution is required';
+            }
+
+            if (isValid) {
+                // Display the success message
+                document.getElementById('formMsg').textContent = 'Form submitted successfully!';
+                document.getElementById('formMsg').classList.add('success');
+
+                // Optionally send data to Google Forms
+                fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this),
+                    mode: 'no-cors'
+                }).then(() => {
+                    // Optionally reset the form
+                    this.reset();
+                }).catch((error) => {
+                    console.error('Error:', error);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
