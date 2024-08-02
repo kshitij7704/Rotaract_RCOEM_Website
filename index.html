@@ -535,12 +535,15 @@
     <div class="contact-section" id="contact">
       <div class="wrapper">
           <div class="contact-form">
-              <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="31c32e64-b5d1-47bb-be58-3d29ee250082">
-                  <input type="text" name="name" id="name" placeholder="Your Name" required>
-                  <input type="email" name="email" id="email" placeholder="Your Email" required>
-                  <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+              <form id="contact-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSczY3P43ivxm1DFx-CZhqmp-A5U_Sfp4otIFGXqYfUbf2whfg/formResponse">
+                  <input type="text" name="entry.1224923982" id="name" placeholder="Your Name">
+                  <input type="email" name="entry.1976355527" id="email" placeholder="Your Email">
+                  <textarea name="entry.54136380" id="msg" placeholder="Your Message"></textarea>
                   <button type="submit">Send Message</button>
+                  <span id="nameError" class="error none"></span>
+                  <span id="emailError" class="error none"></span>
+                  <span id="msgError" class="error none"></span>
+                  <div id="formMsg"></div>
               </form>
           </div>
       </div>
@@ -580,8 +583,8 @@
           </a>
 
           <p class="footer-brand-text">
-            Etiam suscipit fringilla ullamcorper sed malesuada urna nec odio.
-            Etiam suscipit fringilla ullamcorper sed malesuada urna nec odio.
+            Fellowship isn't what we do for each other.
+            Fellowship is what we do together for the world.
           </p>
         </div>
         <ul class="footer-list">
@@ -689,6 +692,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="contactUs.js"></script>
 
 </body>
 

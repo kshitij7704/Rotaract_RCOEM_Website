@@ -1233,3 +1233,26 @@ body {
 .mem ::-webkit-scrollbar-thumb:hover {
   background-color: var(--rich-black-fogra-29-1);
 }
+
+.error {
+  color: rgb(255, 0, 0);
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin: 15px;
+  width: 94%;
+  border-radius: 5px;
+}
+.success {
+  color: rgb(0, 128, 0);
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin: 15px;
+  width: 94%;
+  border-radius: 5px;
+}
+
+.none {
+  display: none;
+}
