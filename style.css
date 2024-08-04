@@ -1368,7 +1368,7 @@ body {
   scroll-snap-type: inline mandatory;
 }
 
-.team .scrollbar-item {
+.team .st {
   width: 100%;
 }
 
@@ -1415,10 +1415,10 @@ body {
   font-weight: 100;
 }
 
-.team .has-scrollbar {
+.team .hs {
   padding-bottom: 0px;
 }
 
-.team .has-scrollbar::-webkit-scrollbar {
+.team .hs::-webkit-scrollbar {
   display: none;
 }
