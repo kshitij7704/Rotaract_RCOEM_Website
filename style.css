@@ -1355,3 +1355,70 @@ body {
 .mem-container .success {
   width: 95.5%;
 }
+
+.team {
+  width: 500px;
+}
+
+.team .has-scrollbar {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-block-end: 30px;
+  scroll-snap-type: inline mandatory;
+}
+
+.team .scrollbar-item {
+  width: 100%;
+}
+
+.temp {
+  overflow-x: hidden;
+}
+
+.team {
+  overflow-x: hidden;
+  width: 500px;
+}
+
+.cc {
+  width: 30%;
+  height: auto;
+}
+
+.st {
+  min-width: 100%;
+}
+
+.cc .cc-content {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cc .cc-content h3 {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cc .cc-content h3 .desig {
+  font-size: 1.1rem;
+}
+
+.members {
+  margin: 0%;
+  padding: 0%;
+  font-weight: 100;
+}
+
+.team .has-scrollbar {
+  padding-bottom: 0px;
+}
+
+.team .has-scrollbar::-webkit-scrollbar {
+  display: none;
+}
