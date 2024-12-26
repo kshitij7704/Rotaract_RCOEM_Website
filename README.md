@@ -25,8 +25,5 @@ We welcome contributions to improve the website! If you have ideas for new featu
 3. Make your changes and commit them with a descriptive message.  
 4. Push your changes and submit a pull request.  
 
-## License  
-This project is licensed under the [MIT License](LICENSE).
-
 ---  
 Let’s work together to make a difference! 🚀
