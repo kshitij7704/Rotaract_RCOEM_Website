@@ -681,6 +681,42 @@ body {
 
 .blog-card .btn-link:is(:hover, :focus) { --color: var(--rich-black-fogra-29-1); }
 
+/* ...existing code... */
+.work-in-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.work-in-progress p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+/* ...existing code... */
 .footer { font-size: var(--fs-6); }
 
 .footer-top .container {
@@ -786,6 +822,7 @@ body {
 .social-link:is(:hover, :focus) { background-color: var(--coquelicot); }
 
 .footer-bottom {
+  bottom: 0;
   background-color: var(--rich-black-fogra-29-2);
   color: var(--white);
   text-align: center;
