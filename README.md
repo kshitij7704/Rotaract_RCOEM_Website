@@ -1,6 +1,7 @@
 # Rotaract RBU Website  
 
-Welcome to the **Rotaract RBU** official website repository! This platform is designed to showcase the impactful work, activities, and events of the Rotaract Club of RBU (Rabindra Bharati University).  
+Welcome to the **Rotaract RBU** official website repository! This platform is designed to showcase the impactful work, activities, and events of the Rotaract Club of RBU (Ramdeobaba University).
+
 
 ## About Rotaract RBU  
 Rotaract RBU is a vibrant community of young individuals dedicated to creating positive change in society through social service, leadership development, and professional growth. The club's mission is to foster meaningful connections while addressing key societal challenges.  
