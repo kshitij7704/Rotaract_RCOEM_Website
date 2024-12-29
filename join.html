@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<arnav>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,7 +72,7 @@
           </li>
         </ul>
       </nav>
-      <a href="join.html" class="btn btn-secondary">Join Us</a>
+      <a href="#join" class="btn btn-secondary">Join Us</a>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <span class="line"></span>
         <span class="line"></span>
@@ -80,7 +80,88 @@
       </button>
     </div>
   </header>
-
+  <section id="join">
+    <!-- <div class="member">
+      <div class="mem-head">
+        <p class="section-subtitle">Join Us</p>
+        <h2 class="h2 section-title text-center">Membership Form</h2>
+      </div>
+      <div class="mem">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUpkS0LtT1lOwzx357kepYjcXg92PHdGbLEOeJsjESaaNZaQ/viewform?embedded=true">Loading…</iframe>
+      </div>
+    </div> -->
+    <br>
+    <div class="mem-head">
+      <p class="section-subtitle">Join Us</p>
+      <h2 class="h2 section-title text-center">Membership Form</h2>
+    </div>
+    <div class="mem-container">
+      <form id="membershipForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdUpkS0LtT1lOwzx357kepYjcXg92PHdGbLEOeJsjESaaNZaQ/formResponse">
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name2" name="entry.1223500353" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                  <label for="mobile">Mobile Number:</label>
+                  <input type="tel" id="mobile" name="entry.805316665" placeholder="Your Mobile Number">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email2" placeholder="Your Email" name="entry.2095270646">
+              </div>
+              <div class="form-group">
+                  <label for="branch">Branch:</label>
+                  <input type="text" id="branch" name="entry.1071028549" placeholder="Your Branch">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="gender">Gender:</label>
+                  <div class="radio-group">
+                      <label><input type="radio" name="entry.1891674036" value="Male">Male</label>
+                      <label><input type="radio" name="entry.1891674036" value="Female">Female</label>
+                      <label><input type="radio" name="entry.1891674036" value="Prefer not to say">Can't say</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div><label for="year">Year:</label></div>
+                  <div class="radio-group">
+                      <label><input type="radio" name="entry.32802590" value="1st">First Year</label>
+                      <label><input type="radio" name="entry.32802590" value="2nd">Second Year</label>
+                      <label><input type="radio" name="entry.32802590" value="3rd">Third Year</label>
+                  </div>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="reason">Why do you want to join us?</label>
+                  <textarea id="reason" name="entry.874227514"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="contribution">How can you be useful to us?</label>
+                  <textarea id="contribution" name="entry.65414392"></textarea>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="experience">Any past social service experience?</label>
+              <textarea id="experience" name="entry.1483839487"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+          <span id="nameError2" class="error none"></span>
+          <span id="mobileError" class="error none"></span>
+          <span id="emailError2" class="error none"></span>
+          <span id="branchError" class="error none"></span>
+          <span id="genderError" class="error none"></span>
+          <span id="yearError" class="error none"></span>
+          <span id="reasonError" class="error none"></span>
+          <span id="contributionError" class="error none"></span>
+          <div id="formMsg2"></div>
+      </form>
+  </div>
+  </section>
   <!-- Remove After Completion-->
 
   <div class="work-in-progress">
