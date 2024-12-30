@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotaract RBU - Persevering Hopes</title>
+  <link rel="shortcut icon" href="./assets/images/title_logo.png">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap" rel="stylesheet">
+  <!-- 
+      - #BACK TO TOP
+    -->
+  
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+      </a>
+    
+      <!-- 
+        - custom js link
+      -->
+      <script src="script.js" defer></script>
+    
+      <!-- 
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="contactUs.js"></script>
+      <script src="joinUs.js"></script>
+</head>
+<body id="top">
+    <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="span">Rotaract RBU</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#events" class="navbar-link" data-nav-link>Events</a>
+          </li>
+          <li>
+            <a href="hof.html" class="navbar-link" data-nav-link>Hall Of Fame</a>
+          </li>
+          <li>
+            <a href="#rotary" class="navbar-link" data-nav-link>About Rotary</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#join" class="btn btn-secondary">Join Us</a>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+  </header>
+  <section id="join">
+    <!-- <div class="member">
+      <div class="mem-head">
+        <p class="section-subtitle">Join Us</p>
+        <h2 class="h2 section-title text-center">Membership Form</h2>
+      </div>
+      <div class="mem">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUpkS0LtT1lOwzx357kepYjcXg92PHdGbLEOeJsjESaaNZaQ/viewform?embedded=true">Loading…</iframe>
+      </div>
+    </div> -->
+    <br>
+    <div class="mem-head">
+      <p class="section-subtitle">Join Us</p>
+      <h2 class="h2 section-title text-center">Membership Form</h2>
+    </div>
+    <div class="mem-container">
+      <form id="membershipForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdUpkS0LtT1lOwzx357kepYjcXg92PHdGbLEOeJsjESaaNZaQ/formResponse">
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name2" name="entry.1223500353" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                  <label for="mobile">Mobile Number:</label>
+                  <input type="tel" id="mobile" name="entry.805316665" placeholder="Your Mobile Number">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email2" placeholder="Your Email" name="entry.2095270646">
+              </div>
+              <div class="form-group">
+                  <label for="branch">Branch:</label>
+                  <input type="text" id="branch" name="entry.1071028549" placeholder="Your Branch">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="gender">Gender:</label>
+                  <div class="radio-group">
+                      <label><input type="radio" name="entry.1891674036" value="Male">Male</label>
+                      <label><input type="radio" name="entry.1891674036" value="Female">Female</label>
+                      <label><input type="radio" name="entry.1891674036" value="Prefer not to say">Can't say</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div><label for="year">Year:</label></div>
+                  <div class="radio-group">
+                      <label><input type="radio" name="entry.32802590" value="1st">First Year</label>
+                      <label><input type="radio" name="entry.32802590" value="2nd">Second Year</label>
+                      <label><input type="radio" name="entry.32802590" value="3rd">Third Year</label>
+                  </div>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="reason">Why do you want to join us?</label>
+                  <textarea id="reason" name="entry.874227514"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="contribution">How can you be useful to us?</label>
+                  <textarea id="contribution" name="entry.65414392"></textarea>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="experience">Any past social service experience?</label>
+              <textarea id="experience" name="entry.1483839487"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+          <span id="nameError2" class="error none"></span>
+          <span id="mobileError" class="error none"></span>
+          <span id="emailError2" class="error none"></span>
+          <span id="branchError" class="error none"></span>
+          <span id="genderError" class="error none"></span>
+          <span id="yearError" class="error none"></span>
+          <span id="reasonError" class="error none"></span>
+          <span id="contributionError" class="error none"></span>
+          <div id="formMsg2"></div>
+      </form>
+  </div>
+  </section>
+  <!-- Remove After Completion-->
+
+  <div class="work-in-progress">
+    <div class="loader"></div>
+    <p>Work in Progress...</p>
+  </div>
+   <!--<section class="section hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h3 class="hero-title">Work in Progress ... </h3>!-->
+    <!-- Remove After Completion-->
+
+
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image img-bg" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="" srcset="" width="100px">
+          <a href="#" class="logo">
+            <span class="span">Rotaract RBU</span>
+          </a>
+          <p class="footer-brand-text">
+            Fellowship isn't what we do for each other.
+            Fellowship is what we do together for the world.
+          </p>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="index.html#about" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="index.html#events" class="footer-link">Events</a>
+          </li>
+          <li>
+            <a href="hof.html" class="footer-link">Hall Of Fame</a>
+          </li>
+          <li>
+            <a href="index.html#rotary" class="footer-link">About Rotary</a>
+          </li>
+          <li>
+            <a href="index.html#contact" class="footer-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="index.html#join" class="footer-link">Join Us</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+            <address class="address footer-link">
+              Shri Ramdeobaba College of Engineering and Management, Gittikhadan, Nagpur - 440 013
+            </address>
+          </li>
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+            <div>
+              <a href="tel:+917972208467" class="footer-link"><p style="color: #fff;">Rtr. Shanmukh Pardhi (President)</p> +91 7972208467</a>
+              <a href="tel:+918600720151" class="footer-link"><p style="color: #fff;">Rtr. Samiksha Harjal (Secretary)</p> +91 8600720151</a>
+            </div>
+          </li>
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+            <div>
+              <a href="mailto:rotaract.rcoem.3030@gmail.com" class="footer-link">rotaract.rcoem.3030@gmail.com</a>
+              <a href="mailto:rotaracttechnical@gmail.com" class="footer-link">rotaracttechnical@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="footer-list temp">
+          <li>
+            <p class="footer-list-title has-before">Socials</p>
+          </li>
+          <li>
+            <ul class="social-list">
+              <li>
+                <a href="https://www.linkedin.com/company/rotaractrcoem/mycompany/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/rotaract_rcoem/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/RotaractRcoem/" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 Rotaract RBU. All Rights Reserved. An Effort of <a href="https://kshitij7704.github.io/Kshitij_Portfolio/" class="copyright-link">Kshitij Kashyap</a> and <a href="https://github.com/arnvjshi/" class="copyright-link">Arnav Joshi.</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="contactUs.js"></script>
+  <script src="joinUs.js"></script>
+
+</body>
+
+</html>
